@@ -1,0 +1,35 @@
+:root {
+  --white:white;
+  --blue:#0080ff;
+  --navy:#111B3C;
+  --orange:#ff7f00;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Verdana, sans-serif;
+    font-size: 18px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 30px auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
