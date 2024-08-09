@@ -83,3 +83,36 @@ button {
     font-size: 23px;
     width: 100%;
 }
+
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--navy);
+}
+
+.output-container {
+  width: 95%;
+  min-height: 55px;
+  margin-top: 25px;
+  border-radius: 0;
+  padding: 15px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.output-array {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.output-value {
+  font-size: 2em;
+}
+
+.alert {
+  background-color: var(--orange);
+  border: 3px solid var(--white);
+  color: var(--white);
+}
