@@ -5,9 +5,8 @@ const sortButton = document.getElementById("sort");
 // Add sortInputArray function 
 const sortInputArray = (event) => {
     event.preventDefault();
-  
-  event.preventDefault();
-  const inputValues =[...document.getElementsByClassName("values-dropdown")].map((dropdown) => dropdown.value);
+    const inputValues =[...document.getElementsByClassName("values-dropdown")].map((dropdown) => Number(dropdown.value));
+    
   }
 
 
