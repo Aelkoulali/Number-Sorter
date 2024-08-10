@@ -9,6 +9,10 @@ const sortInputArray = (event) => {
     
   }
 
+// Add a function to update the display with the sorted numbers
+ const updateUI = (array = []) => {
+
+ }  
 
 // Add Eventlistener() to sortButton
 sortButton.addEventListener("click", sortInputArray);
