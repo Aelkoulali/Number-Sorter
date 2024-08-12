@@ -6,7 +6,7 @@ const sortButton = document.getElementById("sort");
 const sortInputArray = (event) => {
     event.preventDefault();
     const inputValues =[...document.getElementsByClassName("values-dropdown")].map((dropdown) => Number(dropdown.value));
-    
+    updateUI(inputValues);
   }
 
 // Add a function to update the display with the sorted numbers
