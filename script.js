@@ -18,8 +18,11 @@ const sortInputArray = (event) => {
 
  } 
  
- // Add bubbleSort function
+// Add bubbleSort function
  const bubbleSort = (array) => {
+  for(let i = 0; i < array.length; i++){
+    
+  }
 
  };
 
