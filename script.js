@@ -16,7 +16,12 @@ const sortInputArray = (event) => {
     outputValueNode.innerText = num;
   })
 
- }  
+ } 
+ 
+ // Add bubbleSort function
+ const bubbleSort = (array) => {
+
+ };
 
 // Add Eventlistener() to sortButton
 sortButton.addEventListener("click", sortInputArray);
