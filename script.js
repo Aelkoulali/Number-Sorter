@@ -39,6 +39,11 @@ const sortInputArray = (event) => {
   return array;
  };
 
+// Add selectionSort function
+const selectionSort = () => {
+  
+}
+ 
 // Add Eventlistener() to sortButton
 sortButton.addEventListener("click", sortInputArray);
 
