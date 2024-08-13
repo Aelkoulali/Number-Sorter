@@ -36,7 +36,7 @@ const sortInputArray = (event) => {
     }
 
   }
-
+  return array;
  };
 
 // Add Eventlistener() to sortButton
