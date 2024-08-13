@@ -39,10 +39,14 @@ const sortInputArray = (event) => {
   return array;
  };
 
-// Add selectionSort function
+// Add selectionSort function : tracking the index of the smallest value in the array
 const selectionSort = (array) => {
   for(let i = 0; i < array.length; i++){
-    
+    let minIndex = i;
+    for(let j = i+1; j < array.length; j++) {
+      
+    }
+
   }
 
 }
