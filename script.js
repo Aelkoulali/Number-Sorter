@@ -41,6 +41,9 @@ const sortInputArray = (event) => {
 
 // Add selectionSort function
 const selectionSort = (array) => {
+  for(let i = 0; i < array.length; i++){
+    
+  }
 
 }
  
