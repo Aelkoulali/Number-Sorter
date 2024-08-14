@@ -6,7 +6,7 @@ const sortButton = document.getElementById("sort");
 const sortInputArray = (event) => {
     event.preventDefault();
     const inputValues =[...document.getElementsByClassName("values-dropdown")].map((dropdown) => Number(dropdown.value));
-    const sortedValues = insertionSort(inputValues) ; // Update each time withe the function used (bubbleSort(inputValues), selectionSort(inputValues)...)
+    const sortedValues =  inputValues.sort(); // Update each time withe the function used (bubbleSort(inputValues), selectionSort(inputValues)...)
 
     updateUI(sortedValues);
 
@@ -67,7 +67,7 @@ const insertionSort = (array) => {
     }
     array[j + 1] = currValue;
   }
-  return(array);
+  return array;
 }
 // Add Eventlistener() to sortButton
 sortButton.addEventListener("click", sortInputArray);
