@@ -55,7 +55,11 @@ const selectionSort = (array) => {
   }
   return array;
 }
- 
+
+// Add insertionSort function : building up a sorted array at the beginning of the list
+const insertionSort = (array) => {
+  
+}
 // Add Eventlistener() to sortButton
 sortButton.addEventListener("click", sortInputArray);
 
