@@ -53,7 +53,7 @@ const selectionSort = (array) => {
     array[minIndex]= temp;
 
   }
-
+  return array;
 }
  
 // Add Eventlistener() to sortButton
