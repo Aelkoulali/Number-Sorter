@@ -6,11 +6,11 @@ const sortButton = document.getElementById("sort");
 const sortInputArray = (event) => {
     event.preventDefault();
     const inputValues =[...document.getElementsByClassName("values-dropdown")].map((dropdown) => Number(dropdown.value));
-    const sortedValues =  inputValues.sort(); // Update each time withe the function used (bubbleSort(inputValues), selectionSort(inputValues)...)
-
+    // Update each time withe the function used (bubbleSort(inputValues), selectionSort(inputValues)...)
+    const sortedValues =  inputValues.sort((a, b) => {
+      return a - b;
+    }); 
     updateUI(sortedValues);
-
-
   }
 
 // Add a function to update the display with the sorted numbers
@@ -19,7 +19,6 @@ const sortInputArray = (event) => {
     const outputValueNode = document.getElementById(`output-value-${i}`);
     outputValueNode.innerText = num;
   })
-
  } 
  
 // Add bubbleSort function
@@ -30,7 +29,6 @@ const sortInputArray = (event) => {
         const temp = array[j];
         array[j] = array[j + 1];
         array[j + 1] = temp.value;
-
       }
 
     }
