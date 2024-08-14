@@ -47,8 +47,10 @@ const selectionSort = (array) => {
       if (array[j] < array[minIndex]){
         minIndex = j;
       }
-
     }
+    const temp = array[i];
+    array[i] = array[minIndex];
+    array[minIndex]= temp;
 
   }
 
