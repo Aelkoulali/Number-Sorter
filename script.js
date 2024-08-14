@@ -9,6 +9,10 @@ const sortInputArray = (event) => {
     // Update each time withe the function used (bubbleSort(inputValues), selectionSort(inputValues)...)
     const sortedValues =  inputValues.sort((a, b) => {
       return a - b;
+       // The callback to .sort() should return a number. That number determines how to sort the elements a and b:
+      // If the number is negative, sort a before b.
+     // If the number is positive, sort b before a.
+    // If the number is zero, do not change the order of a and b.
     }); 
     updateUI(sortedValues);
   }
