@@ -59,7 +59,8 @@ const selectionSort = (array) => {
 // Add insertionSort function : building up a sorted array at the beginning of the list
 const insertionSort = (array) => {
   for(let i = 1; i < array.length; i++){
-
+    const currValue = array[i];
+    let j = i - 1;
   }
   
 }
