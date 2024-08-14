@@ -67,6 +67,7 @@ const insertionSort = (array) => {
     }
     array[j + 1] = currValue;
   }
+  return(array);
 }
 // Add Eventlistener() to sortButton
 sortButton.addEventListener("click", sortInputArray);
